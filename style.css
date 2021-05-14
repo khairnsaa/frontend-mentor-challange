@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(0, 0%, 95%);
+}
+
+.content {
+  padding: 3.5rem 2rem;
+  margin: auto;
+  width: 80%;
+  line-height: 1.9rem;
+  font-size: 1rem;
+}
+
+.content_1 {
+  margin-top: 3rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.content_1 button {
+  color: hsl(31, 77%, 52%);
+}
+
+.content_3 button {
+  color: hsl(179, 100%, 13%);
+}
+
+.content_2 button {
+  color: hsl(184, 100%, 22%);
+}
+
+.content_2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.content_3 {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.content_1 h1,
+.content_2 h1,
+.content_3 h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  margin: 1.8rem 0;
+}
+
+button {
+  text-transform: capitalize;
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 1.8rem;
+  margin-top: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+footer {
+  margin-top: 1.5rem;
+  color: hsl(184, 100%, 22%);
+  padding: 1rem;
+  border-top: 0.2px solid hsl(179, 100%, 13%);
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 5rem;
+  }
+  .content {
+    width: 100%;
+    /* height: 70vh; */
+    padding: 3rem;
+  }
+
+  .content p {
+    width: 80%;
+  }
+
+  .content_3 p {
+    width: 85%;
+  }
+
+  .content_1 {
+    margin: 0;
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.8rem;
+  }
+  .content_2 {
+    margin: 0;
+  }
+
+  .content_3 {
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.8rem;
+  }
+
+  button {
+    margin-top: 4rem;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
